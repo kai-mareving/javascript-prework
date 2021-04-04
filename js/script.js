@@ -1,8 +1,15 @@
-let computerMove = 'rock';
-let playerMove = 'paper';
+let playerInput = prompt('Choose your move! 1: rock, 2: paper, 3: scissors.');
 
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('Player chose: ' + playerInput);
 
-printMessage('I got ' + computerMove + '! If your move is' + playerMove + ', you win!');
+let playerMove = 'unknown move';
 
-printMessage('randomNumber is ' + randomNumber);
+if(playerInput == '1'){
+  playerMove = 'rock';
+} else if (playerInput == '2') {
+    playerMove = 'paper';
+} else {
+    playerMove = 'scissors';
+}
+
+printMessage('Your move is: ' + playerMove);
