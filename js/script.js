@@ -37,11 +37,12 @@ if(playerInput == '1'){
 printMessage('Your move is: ' + playerMove);
 
 // Game sum-up
-if (computerMove == 'rock' && playerMove == 'paper' || computerMove == 'paper' && playerMove == 'scissors'
-    || computerMove == 'scissors' && playerMove == 'rock') {
+if (computerMove == 'rock' && playerMove == 'paper' || computerMove == 'paper' && playerMove == 'scissors' || computerMove == 'scissors' && playerMove == 'rock') {
     printMessage('You win!');
+} else if (computerMove === playerMove && playerMove !== 'unknown move' && computerMove !== 'unknown move') {
+    printMessage('We have a tie');
 } else if (computerMove == 'unknown move' || playerMove == 'unknown move') {
     printMessage('Something went wrong');
 } else {
-    printMessage('Computer won. We are sorry. Try again!')
+    printMessage('Computer won. You loose. We are sorry. Try again!');
 }
