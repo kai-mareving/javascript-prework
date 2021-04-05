@@ -7,7 +7,7 @@ function getMoveName(moveId) {
     } else if (moveId == 3) {
         return 'scissors';
     } else {
-        printMessage('Move with id ' + moveId + ' is unknown.');
+        printMessage('Move with id ' + moveId + ' is relatively unknown.');
         return 'unknown move';
     }
 }
