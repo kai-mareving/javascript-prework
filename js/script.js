@@ -1,28 +1,26 @@
 // NEW FUNCTIONS
-function getMoveName(MoveId) {
-    if(MoveId == 1){
+function getMoveName(moveId) {
+    if(moveId == 1){
       return 'rock';
-    } else if(MoveId == 2) {
+    } else if(moveId == 2) {
         return 'paper';
-    } else if (MoveId == 3) {
+    } else if (moveId == 3) {
         return 'scissors';
     } else {
-        printMessage('Move with id ' + MoveId + ' is unknown.');
+        printMessage('Move with id ' + moveId + ' is unknown.');
         return 'unknown move';
     }
 }
   
-function displayResult(ComputerMove, PlayerMove){
-    printMessage('I played ' + ComputerMove + ', and you ' + PlayerMove);
+function displayResult(computerMove, playerMove){
+    printMessage('I played ' + computerMove + ', and you ' + playerMove);
   
-    if( ComputerMove == 'rock' && PlayerMove == 'paper'){
+    if( computerMove == 'rock' && playerMove == 'paper'){
       printMessage('You win!');
     } else {
       printMessage('This time you loose :(');
     }
 }
-/******* changes are not yet staged in git       */  
-
 
 // Computers turn
 let randomNumber = Math.floor(Math.random() * 3 + 1);
