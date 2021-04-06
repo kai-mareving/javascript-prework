@@ -1,7 +1,7 @@
 'use strict';
 
 function playGame(gameInput) {
-
+    clearMessages();
     let playerInput = gameInput;
 
     function getMoveName(moveId) {
@@ -39,7 +39,7 @@ function playGame(gameInput) {
 
     console.log('randomNumber: ' + randomNumber + '. computerMove: ' + computerMove);
 
-    // Players turn --> this needs changing to button choice
+    // Players turn
     // let playerInput = prompt('Choose your move! 1: rock, 2: paper, 3: scissors.');
     let playerMove = getMoveName(playerInput);
 
@@ -50,4 +50,4 @@ function playGame(gameInput) {
 
 
 // Action!
-playGame(3);
+// playGame(3);
