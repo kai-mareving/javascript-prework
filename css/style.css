@@ -4,8 +4,7 @@
 }
 
 body {
-  margin: 0;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.7;
 }
 
@@ -18,9 +17,8 @@ body {
 
 #messages {
   flex-direction: row;
-  padding: 10%;
+  padding: 15%;
   font-variant: small-caps;
-  -webkit-text-decoration: goldenrod double underline;
-          text-decoration: goldenrod double underline;
+  font-weight: bold;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBQ0E7RUFDQyxzQkFBc0I7QUNDdkI7O0FERUE7RUFDQyxTQUFTO0VBQ1QsZUFBZTtFQUNmLGdCQUFnQjtBQ0NqQjs7QURFQTtFQUNDLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsWUFBWTtFQUNULGVBQWU7QUNDbkI7O0FERUE7RUFDQyxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHdCQUF3QjtFQUN4QixtREFBMkM7VUFBM0MsMkNBQTJDO0FDQzVDIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBQ0E7RUFDQyxzQkFBc0I7QUNDdkI7O0FERUE7RUFFQyxlQUFlO0VBQ2YsZ0JBQWdCO0FDQWpCOztBREdBO0VBQ0MsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1QsZUFBZTtBQ0FuQjs7QURHQTtFQUNDLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osd0JBQXdCO0VBQ3hCLGlCQUFpQjtBQ0FsQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
