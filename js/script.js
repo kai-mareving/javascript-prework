@@ -1,10 +1,9 @@
 'use strict';
 
-function playGame(gameInput) {
+function playGame(playerInput) {
     clearMessages();
-    let playerInput = gameInput;
 
-    function getMoveName(moveId) {
+    const getMoveName = function (moveId) {
         if (moveId == 1) {
             return 'rock';
         } else if (moveId == 2) {
@@ -15,9 +14,9 @@ function playGame(gameInput) {
             printMessage('Move with id ' + moveId + ' is unknown.<br><br>');
             return 'unknown move';
         }
-    }
+    };
 
-    function displayResult(computerMove, playerMove) {
+    const displayResult = function(computerMove, playerMove) {
         printMessage('Computer played: ' + computerMove + '<br> You played: ' + playerMove + '.' + '<br><br>');
   
         if (computerMove == 'rock' && playerMove == 'paper'
@@ -34,20 +33,17 @@ function playGame(gameInput) {
     }
 
     // Computers turn
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    let randomNumber = getRandomNumber(1, 3);
+    // Math.floor(Math.random() * 3 + 1);  -- old version. Leaving for reference
     let computerMove = getMoveName(randomNumber);
-
-    console.log('randomNumber: ' + randomNumber + '. computerMove: ' + computerMove);
-
     // Players turn
-    // let playerInput = prompt('Choose your move! 1: rock, 2: paper, 3: scissors.');
     let playerMove = getMoveName(playerInput);
 
-    console.log('Our initial gameInput saved in playerInput: ' + playerInput + '. And playerMove is: ' + playerMove);
+    console.log('randomNumber: ' + randomNumber + '. computerMove: ' + computerMove);
+    console.log('playerInput: ' + playerInput + '. playerMove: ' + playerMove);
 
     displayResult(computerMove, playerMove);
 }
-
 
 // Action!
 document.getElementById('play-rock').addEventListener('click', function(){
